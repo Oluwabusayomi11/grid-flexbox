@@ -46,12 +46,12 @@ li{
       flex-direction: column;
       flex:100%;
     }
-  }
+}
 .sedan{
     background-color: hsl(31, 77%, 52%);
     flex: 30%;
     padding: 40px;
-    border-radius:  8px 0 0 8px;
+    border-radius: 8px 0 0 8px;   
 }
 .suv{
     background-color: hsl(184, 100%, 22%);
