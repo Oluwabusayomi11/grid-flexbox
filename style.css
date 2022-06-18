@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     background: hsl(0, 0%, 95%);
@@ -13,7 +15,7 @@ img{
 header{
     background-color: midnightblue;
     width: 100%;
-    margin-bottom: 30px;
+    height: 60px;
 }
 nav{
     float: right;
@@ -34,18 +36,33 @@ li{
     font-size: 20px;
 }
 .container{
-    max-width: 60%;
+    width: 50%;
     height: 100vh;
     display: flex;
-    flex-flow: row wrap;
+    justify-content: center;
     align-items: center;
     margin: auto;
 }
-@media (max-width: 375px) {
+
+@media (min-width:375px) and (max-width: 600px) {
+    header{
+        margin-bottom: 40px;
+    }
+    
     .container {
       flex-direction: column;
       flex:100%;
+      height: auto;
     }
+
+    .sedan{
+        border-radius: 8px 8px 0 0 ;
+    }
+
+    .luxury{
+        border-radius:  0 0 8px 8px ;
+    }
+
 }
 .sedan{
     background-color: hsl(31, 77%, 52%);
@@ -55,7 +72,7 @@ li{
 }
 .suv{
     background-color: hsl(184, 100%, 22%);
-    flex: 30%;
+    flex: 30%;  
     padding: 40px;
    
 }
@@ -69,6 +86,7 @@ h1{
     color: hsl(0, 0%, 95%);
     font-family: 'Big Shoulders Display', cursive;
     font-size: 30px;
+    margin: 25px 0;
 }
 p{
     color: hsla(0, 0%, 100%, 0.75);

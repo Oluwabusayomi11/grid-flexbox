@@ -1,68 +1,77 @@
-*{
-    box-sizing: 0;
-    padding: 0;
-    margin: 0;
-}
-body{
-    background-color: midnightblue;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-    min-height: 100vh;
-    
-}
-main{
-    height: 75vh;
-    min-width: 50%;
-    margin: auto;
-    display: grid;
-    grid-template-areas: 
-    'a a b'
-    'c d d'
-    'c e e'
-    ;
-    gap: 10px;
-}
-header{
-    background-color: aliceblue;
-    width: 100%;
-}
-nav{
-    float: right;
-}
-a{
-    color: blueviolet;
-    text-decoration: none;
-}
-a:hover{
-    color: #4985ca;
-    cursor: pointer;
-    
-}
-li{
-    display: inline-block;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    font-size: 20px;
+* {
+  box-sizing: 0;
+  padding: 0;
+  margin: 0;
 }
 
-.color-a{
-    background-color: orangered;
-    grid-area: a;
+body {
+  background-color: midnightblue;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  min-height: 100vh;
 }
-.color-b{
-    background-color: orange;
-    grid-area: b;
+
+header {
+  background-color: aliceblue;
+  width: 100%;
 }
-.color-c{
-    background-color: rgb(0, 133, 0);
-    grid-area: c;
+
+nav {
+  float: right;
 }
-.color-d{
-    background-color: lightseagreen;
-    grid-area: d;
+
+a {
+  color: blueviolet;
+  text-decoration: none;
 }
-.color-e{
-    background-color: lightseagreen;
-    grid-area: e;
+
+a:hover {
+  color: #4985ca;
+  cursor: pointer;
+}
+
+li {
+  display: inline-block;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+main {
+  height: 80vh;
+  width: 50%;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "a a a b"
+    "a a a b"
+    "c c d d"
+    "c c e e";
+  gap: 10px;
+}
+
+.color-a {
+  background-color: rgb(226, 66, 8);
+  grid-area: a;
+}
+
+.color-b {
+  background-color: orange;
+  grid-area: b;
+}
+
+.color-c {
+  background-color: rgb(0, 133, 0);
+  grid-area: c;
+}
+
+.color-d {
+  background-color: lightseagreen;
+  grid-area: d;
+}
+
+.color-e {
+  background-color: lightseagreen;
+  grid-area: e;
 }
